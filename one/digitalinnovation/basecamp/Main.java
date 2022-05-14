@@ -6,10 +6,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)  throws IOException, InterruptedException {
         System.out.println("Exercício quadrilátero");
-        Quadrilatero.area(3);
-        Quadrilatero.area(3d, 4d);
-        Quadrilatero.area(3, 4, 5);
-        Quadrilatero.area(3f, 4f);
+        double areaQuadrado = Quadrilatero.area(3);
+        System.out.println("Área do quadrado é: " + areaQuadrado);
+        double areaRetangulo = Quadrilatero.area(3d, 4d);
+        System.out.println("Área do retângulo é: " + areaRetangulo);
+        double areaTrapezio = Quadrilatero.area(3, 4, 5);
+        System.out.println("Área do trapézio é: " + areaTrapezio);
 
 
         boolean continuar = true;
